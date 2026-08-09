@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Maahi ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- INTRO PAGE -->
+<!-- ========================= -->
+
+<section id="introPage" class="page active">
+
+<div class="stars"></div>
+
+<div class="introBox">
+
+<h3>✨ A Special Surprise ✨</h3>
+
+<h1>
+For The Most
+<span>Beautiful Bestie ❤️</span>
+</h1>
+
+<p>
+Some friendships become family...
+And this surprise is for one of them. 🌸
+</p>
+
+<button onclick="goPassword()">
+✨ Tap To Begin ✨
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PASSWORD PAGE -->
+<!-- ========================= -->
+
+<section id="loginPage" class="page">
+
+<div class="glassCard">
+
+<div class="lock">
+🔐
+</div>
+
+<h2>
+Welcome Maahi ❤️
+</h2>
+
+<p>
+Enter Secret Password
+</p>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<button onclick="checkPassword()">
+Unlock Surprise ❤️
+</button>
+
+<p id="error"></p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LOADING PAGE -->
+<!-- ========================= -->
+
+<section id="loadingPage" class="page">
+
+<div class="glassCard">
+
+<h1>✨</h1>
+
+<h2>
+Preparing Your Surprise...
+</h2>
+
+<div class="loader"></div>
+
+<p>
+Please Wait...
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SORRY + FRIENDSHIP LETTER -->
+<!-- ========================= -->
+
+<section id="letterPage1" class="page">
+
+<div class="letterCard">
+
+<h1>
+💌 Dear Maahi
+</h1>
+
+<p>
+
+Happy Birthday To The Most Amazing Person ❤️
+
+Aaj ka din bahut special hai,
+kyunki aaj tumhara birthday hai. 🎂
+
+Izaaaa ki life me tum sirf ek friend nahi,
+balki ek family member ki tarah ho.
+
+Har hasi,
+har memory,
+har late night talk,
+aur har emotional moment ko
+special banane ke liye thank you. 🌸
+
+</p>
+
+<button onclick="openBirthday()">
+Continue ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MAIN BIRTHDAY PAGE -->
+<!-- ========================= -->
+
+<section id="birthdayPage" class="page">
+
+<div class="birthdayCard">
+
+<h1>
+🎂 Happy Birthday
+</h1>
+
+<h2>
+Maahi ❤️
+</h2>
+
+<img
+src="Photo1.jpg"
+id="photo"
+alt="Maahi">
+
+<p class="wish">
+
+May Allah bless you with happiness,
+success,
+good health,
+and endless smiles.
+
+🌸❤️
+
+</p>
+
+<button onclick="openGallery()">
+
+📸 Open Memories
+
+</button>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- GALLERY PAGE -->
+<!-- ========================= -->
+
+<section id="galleryPage" class="page">
+
+<div class="galleryCard">
+
+<h1>📸 Beautiful Memories ❤️</h1>
+
+<div class="gallery">
+
+<img src="Photo1.jpg" alt="">
+<img src="Photo2.jpg" alt="">
+<img src="Photo3.jpg" alt="">
+<img src="Photo4.jpg" alt="">
+<img src="Photo5.jpg" alt="">
+<img src="Photo6.jpg" alt="">
+<img src="Photo7.jpg" alt="">
+<img src="Photo8.jpg" alt="">
+<img src="Photo9.jpg" alt="">
+<img src="Photo10.jpg" alt="">
+
+</div>
+
+<button onclick="openGift()">
+🎁 Open Special Gift
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GIFT PAGE -->
+<!-- ========================= -->
+
+<section id="giftPage" class="page">
+
+<div class="giftCard">
+
+<h1>
+🎁 A Special Gift
+</h1>
+
+<div id="giftBox" onclick="openFinalLetter()">
+
+🎁
+
+</div>
+
+<p>
+Tap The Gift ❤️
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FINAL LETTER PAGE -->
+<!-- ========================= -->
+
+<section id="finalLetterPage" class="page">
+
+<div class="letterCard">
+
+<h1>
+💖 For My Bestie
+</h1>
+
+<p id="typingText"></p>
+
+<button onclick="openThanks()">
+
+❤️ Final Surprise
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- THANK YOU PAGE -->
+<!-- ========================= -->
+
+<section id="thanksPage" class="page">
+
+<div class="thanksCard">
+
+<h1>
+🎂 Happy Birthday Maahi ❤️
+</h1>
+
+<h2>
+From Izaaaa 🌸
+</h2>
+
+<p>
+
+Thank you for being such an amazing best friend.
+
+No matter how much time passes,
+
+you will always be one of the most special people.
+
+May your life always be filled with happiness,
+
+success,
+
+beautiful memories,
+
+and endless smiles. ❤️
+
+Stay happy,
+stay blessed,
+and keep shining forever. ✨
+
+</p>
+
+<h3>
+Forever Best Friends ❤️
+</h3>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- EFFECTS -->
+<!-- ========================= -->
+
+<div id="hearts"></div>
+<div id="petals"></div>
+<div id="fireworks"></div>
+
+<!-- ========================= -->
+<!-- MUSIC -->
+<!-- ========================= -->
+
+<audio id="music" loop>
+
+<source src="birthday.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
